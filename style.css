@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Staatliches', cursive;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+.main header{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.main header .themes{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.main header .themes .themeBox{
+    width: 105px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.main header .themes .themeBox .theme{
+    width: 23px;
+    height: 23px;
+    margin: 5px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.main header .themes .themeBox .theme:nth-child(1){
+    background-color: black;
+}
+.main header .themes .themeBox .theme:nth-child(2){
+    background-color: blanchedalmond;
+}
+.main header .themes .themeBox .theme:nth-child(3){
+    background:  #00008B;
+}
+.main header .heading{
+    margin-top: 25px;
+}
+.main header .heading h1{
+    font-size: 190%;
+    overflow: hidden;
+    border-right: 3px solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation:
+        typing 5s steps(20, end),
+        blink-caret .278s step-end infinite;
+}
+@keyframes typing{
+    from { width: 0 }
+    to { width: 100% }
+}  
+@keyframes blink-caret{
+    from, to { border-color: transparent }
+    50% { border-color: grey; }
+}
+
+.main main{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;   
+}
+
+.main main .form{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+}
+.main main .form .inputBox{
+    height: 35px;
+    width: 200px;
+    border-radius: 6% 0% 0% 6% / 50% 0% 0% 50% ;
+    border: 2px solid black;
+    border-right-width: 1px;
+    padding: 10px;
+}
+.main main .form .submitBox{
+    height: 35px;
+    width: 40px;
+    border-radius: 0 25% 25% 0/ 0 50% 50% 0;
+    border: 2px solid black;
+    border-left-width: 1px;
+    cursor: pointer;
+}
+.main main .tasks{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 7%;
+}
+.main main .tasks .taskList{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.main main .tasks .taskList li{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 1.5% 1.5% 1.5% 1.5%/ 50% 50% 50% 50%;
+    margin: 5px;
+}
+.main main .tasks .taskList li .display{
+    flex: 6;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 5%;
+}
+.main main .tasks .taskList li .done{
+    flex: 0.6;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: green;
+    height: 100%;
+    cursor: pointer;
+    border-left: 2px solid black;
+}
+.main main .tasks .taskList li .remove{
+    flex: 0.6;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: red;
+    cursor: pointer;
+    border-radius: 0% 17% 17% 0%/ 50% 50% 50% 50%;
+    overflow: hidden;
+    border-left: 2px solid black;
+}
